@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  socket-server:
+    build: 
+      context: ./socket-server
+      dockerfile: ./Dockerfile    
+    ports:
+      - "8080:8080"
